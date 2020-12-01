@@ -411,10 +411,15 @@ help me in building my professional career.</p>
 
   <div class="copyright">
       <div class="col-md-12 text-center">
-        <p>&copy; Copyright Tuhin Manna 2019</p>
+        <p>&copy; Copyright Tuhin Manna 2019 -<script>document.write(new Date().getFullYear())</script> </p> Visitors No:<a  id="count" ></a></p>
       </div>
   </div>
 
+<script>
+$.getJSON("https://api.countapi.xyz/hit/a.html/visits", function(response) {
+    $("#count").text(response.value);
+});</script>	
+	
   <script src="https://kit.fontawesome.com/134661dfbe.js" crossorigin="anonymous"></script>
   <script src="js/jquery.superslides.min.js"></script>
   <script src="js/jquery.easypiechart.min.js"></script>
